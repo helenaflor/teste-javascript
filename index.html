@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prática 1 - emitir alerta</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <p>
+      1) Dado que você tem os campos a seguir, obtenha os valores de cada um e
+      emita um alerta com a seguinte mensagem: "Seja bem vind{article}, {name}
+      {lastName}!"
+    </p>
+    <br />
+    <p>Esteja atento ao seguinte:</p>
+    <ul>
+      <li>article = artigo usado de acordo com o gênero da pessoa</li>
+      <li>name = Nome da pessoa</li>
+      <li>lastName = sobrenome</li>
+    </ul>
+    <p>
+      Exemplo, caso a pessoa se identifique como <b>mulher</b> e com nome
+      <b>Helena</b> e sobrenome <b>Flor</b>, deve emitir a mensagem "<b
+        >Seja bem vinda, Helena Flor</b
+      >
+    </p>
+    <p>
+      Caso a pessoa <b>não queira se identificar</b>, e seu nome seja
+      <b>Frida</b> e sobrenome <b>Kahlo</b>, emita "<b
+        >Seja bem vindx, Frida Kahlo</b
+      >"
+    </p>
+    <br />
+    <br />
+    <div class="form">
+      <label for="name">Name: </label>
+      <input id="name" type="text" />
+      
+      <br />
+      <label for="last-name">Last Name: </label>
+      <input id="last-name" type="text" />
+
+      <br />
+      <p>Genre:</p>
+      <select>
+          <option value="M">Male</option>
+          <option value="F">Female</option>
+          <option value="X">I prefer to not say</option>
+      </select>
+
+      <br />
+      <button onclick="showMessage();">Give a Welcome Message</button>
+      <script src="script.js"></script>
+    </div>
+  </body>
+</html>
